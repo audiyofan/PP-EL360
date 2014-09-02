@@ -1,0 +1,56 @@
+Circuit: * C:\Program Files\LTC\LTspiceIV\Mes Projets\DA EL360\Déphaseur 6F12P.asc
+
+Direct Newton iteration for .op point succeeded.
+Fourier components of V(output)
+DC component:167.818
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	1.000e+03	9.093e+01	1.000e+00	   -0.10°	    0.00°
+    2   	2.000e+03	2.721e+00	2.993e-02	   89.83°	   89.93°
+    3   	3.000e+03	4.750e-01	5.224e-03	   -0.30°	   -0.20°
+    4   	4.000e+03	7.079e-02	7.785e-04	   89.60°	   89.69°
+    5   	5.000e+03	1.983e-02	2.181e-04	  177.34°	  177.44°
+    6   	6.000e+03	7.003e-03	7.701e-05	  -92.73°	  -92.63°
+    7   	7.000e+03	1.318e-03	1.450e-05	   25.57°	   25.67°
+    8   	8.000e+03	1.203e-03	1.323e-05	 -103.10°	 -103.01°
+    9   	9.000e+03	6.844e-04	7.527e-06	  117.73°	  117.82°
+Total Harmonic Distortion: 3.039191%
+
+
+Fourier components of V(output)
+DC component:167.818
+
+Harmonic	Frequency	 Fourier 	Normalized	 Phase  	Normalized
+ Number 	  [Hz]   	Component	 Component	[degree]	Phase [deg]
+    1   	1.000e+03	9.093e+01	1.000e+00	   -0.10°	    0.00°
+    2   	2.000e+03	2.721e+00	2.993e-02	   89.83°	   89.93°
+    3   	3.000e+03	4.750e-01	5.224e-03	   -0.30°	   -0.20°
+    4   	4.000e+03	7.079e-02	7.785e-04	   89.60°	   89.69°
+    5   	5.000e+03	1.983e-02	2.181e-04	  177.34°	  177.44°
+    6   	6.000e+03	7.003e-03	7.701e-05	  -92.73°	  -92.63°
+    7   	7.000e+03	1.318e-03	1.450e-05	   25.57°	   25.67°
+    8   	8.000e+03	1.203e-03	1.323e-05	 -103.10°	 -103.01°
+    9   	9.000e+03	6.844e-04	7.527e-06	  117.73°	  117.82°
+Total Harmonic Distortion: 3.039191%
+
+
+
+Date: Tue Sep 02 20:39:39 2014
+Total elapsed time: 0.202 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2103
+traniter = 2088
+tranpoints = 1042
+accept = 1042
+rejected = 0
+matrix size = 52
+fillins = 28
+solver = Normal
+Matrix Compiler1: 5.37 KB object code size  4.3/3.4/[1.4]
+Matrix Compiler2: 4.89 KB object code size  3.0/2.9/[1.5]
+
+
