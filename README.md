@@ -17,3 +17,8 @@ Attention la simulation n'est qu'un outil d'aide à la conception
 les résultats devraient être le plus proches possible de la vrai vie
 mais ...
 
+Quelques tentatives de simulation sous LTC vont permettre de débroussailler 
+la guarrigue qu'est la topologie de driver un tube pentode par sa G2
+
+To be continued
+
