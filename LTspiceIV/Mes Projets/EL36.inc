@@ -26,3 +26,4 @@ BIGK  G1   K I=V(IG)
 CGA   G1  A  1.1p
 CGK   G1  K  10.8p
 C12   G1  G2 7.2p
+.ENDS

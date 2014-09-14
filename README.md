@@ -20,5 +20,9 @@ mais ...
 Quelques tentatives de simulation sous LTC vont permettre de débroussailler 
 la guarrigue qu'est la topologie de driver un tube pentode par sa G2
 
+Un petit essai de schéma pour visualiser
+
+![](images/PP_EL360_schema.png)
+
 To be continued
 
