@@ -20,9 +20,9 @@ mais ...
 Quelques tentatives de simulation sous LTC vont permettre de débroussailler 
 la guarrigue qu'est la topologie de driver un tube pentode par sa G2
 
-Un petit essai de schéma pour visualiser
+Un petit essai de schéma pour visualiser la correction différentielle
 
-![](images/PP_EL36_6N2P_6F12P.png)
+![](images/PP EL36 6N2P 6F16P Differentiel schema.png)
 
 To be continued
 
