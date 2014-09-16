@@ -33,15 +33,17 @@ Puis on a rajouté un cathode follower
 ![](images/Déphaseur 6N2P_CF 6F12p.png)
 
 La finalité du projet étant un Push-Pull, un rapide calcul de droite de charge 
-pour déterminer les points de fonctionnement et avancé un peu à l'aveugle 
+pour déterminer les points de fonctionnement et avancer un peu à l'aveugle 
 a vrai dire !
 
 ![](images/PP EL36 6N2P 6F12P.png)
 
 Et enfin le schéma pour visualiser la correction différentielle,
-ce dernier a nécessité quelques séance de "brainstorming"
+ce dernier a nécessité quelques séances de "brainstorming"
 
 ![](images/PP EL36 6N2P 6F12P Differentiel schema.png)
+
+Les fichiers de simulations sont disponible dans le dossier "Mes projets", enjoy
 
 To be continued
 
