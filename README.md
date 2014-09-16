@@ -20,9 +20,28 @@ mais ...
 Quelques tentatives de simulation sous LTC vont permettre de débroussailler 
 la guarrigue qu'est la topologie de driver un tube pentode par sa G2
 
-Un petit essai de schéma pour visualiser la correction différentielle
+Pour la petite histoire tout est parti de là
 
-![](images/PP EL36 6N2P 6F16P Differentiel schema.png)
+![](images/Préampli_6F12P.png)
+
+Qu'on a extrapolé en déphaseur
+
+![](images/Déphaseur_6F12P.png)
+
+Puis on a rajouté un cathode follower
+
+![](images/Déphaseur 6N2P_CF 6F12p.png)
+
+La finalité du projet étant un Push-Pull, un rapide calcul de droite de charge 
+pour déterminer les points de fonctionnement et avancé un peu à l'aveugle 
+a vrai dire !
+
+![](images/PP EL36 6N2P 6F12P.png)
+
+Et enfin le schéma pour visualiser la correction différentielle,
+ce dernier a nécessité quelques séance de "brainstorming"
+
+![](images/PP EL36 6N2P 6F12P Differentiel schema.png)
 
 To be continued
 
