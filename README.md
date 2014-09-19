@@ -43,6 +43,12 @@ ce dernier a nécessité quelques séances de "brainstorming"
 
 ![](images/PP EL36 6N2P 6F12P Differentiel schema.png)
 
+Après quelques recherches d'idées et divers questionnement une simplification
+du schéma au détriment d'une légère perte de puissance nous est apparu
+comme une bonne alternative 
+
+![](images/PP EL36 6N2P 6F12P Differentiel schema B+280 V.png)
+
 Les fichiers de simulations sont disponible dans le dossier "Mes projets", enjoy
 
 To be continued
