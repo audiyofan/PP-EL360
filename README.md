@@ -49,6 +49,12 @@ comme une bonne alternative
 
 ![](images/PP EL36 6N2P 6F12P Differentiel schema B+280 V.png)
 
+Toujours en quête d'améliorations, on s'est penché sur le déphaseur, il en 
+ressort que pour guarantir un bon swing au CF qui alimente les finales
+et pour ne pas perdre trop d'excursion versus le taux de distorsion 
+Il serait préférable d'avoir 2 tensions HT, une vers 350 et l'autre 
+vers 280, pour l'instant 
+
 Les fichiers de simulations sont disponible dans le dossier "Mes projets", enjoy
 
 To be continued
