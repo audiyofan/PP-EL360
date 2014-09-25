@@ -57,5 +57,14 @@ vers 280, pour l'instant
 
 Les fichiers de simulations sont disponible dans le dossier "Mes projets", enjoy
 
+Il faut bien voir ce que donne nos modèles, voici donc le schéma pour tester les 
+courbes brutes 
+
+![](images/Traceur Pentode drivée par G2 et pont diviseur.png)
+
+Un traçage donne ceci
+
+![](images/Traceur Pentode drivée par G2.png)
+
 To be continued
 
