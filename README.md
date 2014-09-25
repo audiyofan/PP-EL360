@@ -45,15 +45,21 @@ ce dernier a nécessité quelques séances de "brainstorming"
 
 Après quelques recherches d'idées et divers questionnement une simplification
 du schéma au détriment d'une légère perte de puissance nous est apparu
-comme une bonne alternative 
-
-![](images/PP EL36 6N2P 6F12P Differentiel schema B+280 V.png)
+comme une bonne alternative.
 
 Toujours en quête d'améliorations, on s'est penché sur le déphaseur, il en 
 ressort que pour guarantir un bon swing au CF qui alimente les finales
 et pour ne pas perdre trop d'excursion versus le taux de distorsion 
 Il serait préférable d'avoir 2 tensions HT, une vers 350 et l'autre 
 vers 280, pour l'instant 
+
+Arnaud Haegele a aussi attiré mon attention sur la valeur de la "grid stoper" 
+dans la grille écran des finales qui influait sur le comportement de la Cdiff
+abbaisser cette résistance vers 100 ohm est aussi bénéfique !
+
+Le schéma un peu plus abouti donne ceci
+
+![](images/PP EL36 6N2P 6F12P Differentiel schema B+280 V B2+350V.png)
 
 Les fichiers de simulations sont disponible dans le dossier "Mes projets", enjoy
 
