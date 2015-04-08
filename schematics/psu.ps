@@ -1,9 +1,9 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%Title: psu.ps
 %%Creator: XCircuit v3.7 rev26
-%%CreationDate: Mon Mar 30 20:52:04 2015
+%%CreationDate: Wed Apr  8 23:09:56 2015
 %%Pages: 1
-%%BoundingBox: 68 68 835 460
+%%BoundingBox: 68 68 865 484
 %%DocumentNeededResources: font Helvetica Helvetica-Bold Times-Roman 
 %%EndComments
 %%BeginProlog
@@ -214,14 +214,6 @@ begingate
 endgate
 } def
 
-/euro::R {
-begingate
-1 1.000 0 80 0 40 2 polygon
-1 1.000 -16 40 16 40 16 -40 -16 -40 -16 40 5 polygon
-1 1.000 0 -40 0 -80 2 polygon
-endgate
-} def
-
 /tubeamp::dot {
 begingate
 248 1.000 0 0 6 0.000 360.000 xcarc
@@ -255,6 +247,14 @@ begingate
 1 1.000 -4 -60 4 -60 2 polygon
 0.933 0.604 0.000 scb
 (GND) {/Times-Roman cf} 2 1 0 1.000 0 0 pinglobal
+endgate
+} def
+
+/euro::R {
+begingate
+1 1.000 0 80 0 40 2 polygon
+1 1.000 -16 40 16 40 16 -40 -16 -40 -16 40 5 polygon
+1 1.000 0 -40 0 -80 2 polygon
 endgate
 } def
 
@@ -395,31 +395,25 @@ endgate
 1 1.000 -320 320 -320 288 2 polygon
 1.000 0 -320 272 generic::jumper
 1 1.000 -160 160 -160 128 2 polygon
-1.000 90 64 128 euro::R
 1.000 0 -64 288 euro::ELCO
 1 1.000 -160 400 -160 448 2 polygon
 1 1.000 -64 320 -64 448 2 polygon
 1 1.000 -64 240 -64 128 2 polygon
 1 1.000 -320 128 -320 256 2 polygon
-1 1.000 -320 128 -16 128 2 polygon
-1.000 0 192 288 euro::D
-1 1.000 232 287 216 303 2 polygon
-1 1.000 168 305 152 321 2 polygon
-1 1.000 192 240 192 128 2 polygon
-1 1.000 192 336 192 448 2 polygon
-1 1.000 192 448 -224 448 2 polygon
+1.000 0 96 352 euro::D
+1 1.000 136 351 120 367 2 polygon
+1 1.000 72 369 56 385 2 polygon
 1.000 0 -64 448 tubeamp::dot
 1.000 0 -160 448 tubeamp::dot
 1.000 0 -160 272 tubeamp::dot
 1.000 0 -160 128 tubeamp::dot
 1.000 0 -64 128 tubeamp::dot
 1.000 0 -320 448 tubeamp::dot
-1 1.000 144 128 256 128 2 polygon
 0.000 0.000 1.000 scb
-(-20V) {/Helvetica-Bold cf} 2 16 0 1.000 304 112 label
+(-20V) {/Helvetica-Bold cf} 2 16 0 1.000 432 128 label
 sce
-1 1.000 256 128 288 128 288 144 288 96 4 polygon
-1.000 0 192 128 tubeamp::dot
+1 1.000 384 128 416 128 416 144 416 96 4 polygon
+1.000 0 96 128 tubeamp::dot
 (12V) {/Helvetica-Bold 0.600 cf} 2 16 0 1.000 -432 400 label
 (100mA) {/Helvetica-Bold 0.600 cf} 2 16 0 1.000 -432 368 label
 (100u) {/Helvetica 0.600 cf} 2 16 0 1.000 -240 384 label
@@ -428,9 +422,7 @@ sce
 (100u) {/Helvetica 0.600 cf} 2 16 0 1.000 -240 224 label
 (35V) {/Helvetica 0.600 cf} 2 16 0 1.000 -32 256 label
 (1000u) {/Helvetica 0.600 cf} 2 16 0 1.000 -32 288 label
-(47) {/Helvetica 0.600 cf} 2 16 0 1.000 48 80 label
-(20V) {/Helvetica 0.600 cf} 2 16 0 1.000 240 288 label
-(5W) {/Helvetica 0.600 cf} 2 16 0 1.000 240 256 label
+(20V) {/Helvetica 0.600 cf} 2 16 0 1.000 144 352 label
 (6.3V) {/Helvetica-Bold 0.600 cf} 2 16 0 1.000 -432 192 label
 (5A) {/Helvetica-Bold 0.600 cf} 2 16 0 1.000 -432 160 label
 (2.5A) {/Helvetica-Bold 0.600 cf} 2 16 0 1.000 -432 -48 label
@@ -463,75 +455,73 @@ sce
 sce
 (300V) {/Helvetica-Bold 0.600 cf} 2 16 0 1.000 -432 688 label
 (300mA) {/Helvetica-Bold 0.600 cf} 2 16 0 1.000 -432 656 label
-1 1.000 -48 784 -48 848 624 848 3 polygon
 1.000 0 -48 784 generic::dot
 1.000 0 208 784 generic::dot
-1.000 0 544 640 analog::pnp
-1.000 180 544 768 euro::R
-1.000 180 448 752 analog::diode
-1.000 180 448 384 euro::R
-1 1.000 448 800 448 848 2 polygon
-1 1.000 480 640 448 640 2 polygon
-1.000 180 544 464 euro::R
-1.000 180 544 272 euro::R
-1.000 360 544 160 analog::gnd
-1 1.000 544 144 544 192 2 polygon
-1 1.000 544 352 544 400 2 polygon
-1 1.000 544 528 544 576 2 polygon
-(220k) {/Helvetica 0.600 cf} 2 16 0 1.000 368 384 label
-(1/2W) {/Helvetica 0.600 cf} 2 16 0 1.000 368 352 label
-1.000 90 656 560 euro::R
-1.000 0 784 480 euro::ELCO
-1.000 360 784 432 analog::gnd
--1.000 90 784 848 analog::pmos2
-1 1.000 720 848 624 848 2 polygon
-1.000 180 784 704 euro::R
-1 1.000 784 512 784 624 2 polygon
-1 1.000 784 560 736 560 2 polygon
-1 1.000 576 560 544 560 2 polygon
-1.000 0 784 560 generic::dot
-1.000 0 544 560 generic::dot
-1.000 0 448 640 generic::dot
-1.000 0 544 848 generic::dot
-1.000 0 448 848 generic::dot
-(100k) {/Helvetica 0.600 cf} 2 16 0 1.000 640 592 label
-(91k) {/Helvetica 0.600 cf} 2 16 0 1.000 576 464 label
-(180k) {/Helvetica 0.600 cf} 2 16 0 1.000 576 272 label
-(1/2W) {/Helvetica 0.600 cf} 2 16 0 1.000 576 240 label
-(15u) {/Helvetica 0.600 cf} 2 16 0 1.000 816 480 label
-(450V) {/Helvetica 0.600 cf} 2 16 0 1.000 816 448 label
-1 1.000 896 848 928 848 928 864 928 816 4 polygon
+1.000 0 624 704 analog::pnp
+1.000 180 624 832 euro::R
+1.000 180 528 816 analog::diode
+1.000 180 528 448 euro::R
+1 1.000 528 864 528 912 2 polygon
+1 1.000 560 704 528 704 2 polygon
+1.000 180 624 528 euro::R
+1.000 180 624 336 euro::R
+1.000 360 624 224 analog::gnd
+1 1.000 624 208 624 256 2 polygon
+1 1.000 624 416 624 464 2 polygon
+1 1.000 624 592 624 640 2 polygon
+(220k) {/Helvetica 0.600 cf} 2 16 0 1.000 448 448 label
+(1/2W) {/Helvetica 0.600 cf} 2 16 0 1.000 448 416 label
+1.000 90 736 624 euro::R
+1.000 0 864 544 euro::ELCO
+1.000 360 864 496 analog::gnd
+-1.000 90 864 912 analog::pmos2
+1 1.000 800 912 704 912 2 polygon
+1.000 180 864 768 euro::R
+1 1.000 864 576 864 688 2 polygon
+1 1.000 864 624 816 624 2 polygon
+1 1.000 656 624 624 624 2 polygon
+1.000 0 864 624 generic::dot
+1.000 0 624 624 generic::dot
+1.000 0 528 704 generic::dot
+1.000 0 624 912 generic::dot
+1.000 0 528 912 generic::dot
+(100k) {/Helvetica 0.600 cf} 2 16 0 1.000 720 656 label
+(91k) {/Helvetica 0.600 cf} 2 16 0 1.000 656 528 label
+(180k) {/Helvetica 0.600 cf} 2 16 0 1.000 656 336 label
+(1/2W) {/Helvetica 0.600 cf} 2 16 0 1.000 656 304 label
+(15u) {/Helvetica 0.600 cf} 2 16 0 1.000 896 544 label
+(450V) {/Helvetica 0.600 cf} 2 16 0 1.000 896 512 label
+1 1.000 976 912 1008 912 1008 928 1008 880 4 polygon
 0.000 0.000 1.000 scb
-(+300V) {/Helvetica-Bold cf} 2 16 0 1.000 944 832 label
-(Reg) {/Helvetica-Bold cf} 2 16 0 1.000 960 784 label
+(+300V) {/Helvetica-Bold cf} 2 16 0 1.000 1024 896 label
+(Reg) {/Helvetica-Bold cf} 2 16 0 1.000 1040 848 label
 sce
-(IRF820) {/Helvetica 0.600 cf} 2 16 0 1.000 752 864 label
--1.000 180 720 384 analog::pmos2
-1 1.000 656 384 544 384 2 polygon
-1 1.000 720 848 720 576 2 polygon
-1.000 0 720 560 generic::jumper
-1 1.000 720 544 720 448 2 polygon
-1 1.000 720 320 720 288 928 288 928 304 928 256 5 polygon
+(IRF820) {/Helvetica 0.600 cf} 2 16 0 1.000 832 928 label
+-1.000 180 800 448 analog::pmos2
+1 1.000 736 448 624 448 2 polygon
+1 1.000 800 912 800 640 2 polygon
+1.000 0 800 624 generic::jumper
+1 1.000 800 608 800 512 2 polygon
+1 1.000 800 384 800 352 1008 352 1008 368 1008 320 5 polygon
 0.000 0.000 1.000 scb
-(+200V) {/Helvetica-Bold cf} 2 16 0 1.000 944 288 label
-(Reg) {/Helvetica-Bold cf} 2 16 0 1.000 960 240 label
+(+200V) {/Helvetica-Bold cf} 2 16 0 1.000 1024 352 label
+(Reg) {/Helvetica-Bold cf} 2 16 0 1.000 1040 304 label
 sce
-(10k) {/Helvetica 0.600 cf} 2 16 0 1.000 816 704 label
-1.000 0 720 848 generic::dot
-1.000 0 544 384 generic::dot
+(10k) {/Helvetica 0.600 cf} 2 16 0 1.000 896 768 label
+1.000 0 800 912 generic::dot
+1.000 0 624 448 generic::dot
 0.000 0.000 1.000 scb
-(Reg) {/Helvetica-Bold cf} 2 16 0 1.000 320 64 label
+(Reg) {/Helvetica-Bold cf} 2 16 0 1.000 448 80 label
 sce
-1.000 225 384 720 generic::arrow
-1.000 225 400 704 generic::arrow
-(green) {/Helvetica 0.600 cf} 2 16 0 1.000 384 672 label
-1 1.000 448 720 448 464 2 polygon
-1 1.000 448 320 448 160 544 160 3 polygon
-1.000 0 544 160 generic::dot
-(IRF820) {/Helvetica 0.600 cf} 2 16 0 1.000 640 320 label
-(MJE350) {/Helvetica 0.600 cf} 2 16 0 1.000 544 640 label
-(1k) {/Helvetica 0.600 cf} 2 16 0 1.000 576 752 label
-(2W) {/Helvetica 0.600 cf} 2 16 0 1.000 48 48 label
+1.000 225 464 784 generic::arrow
+1.000 225 480 768 generic::arrow
+(green) {/Helvetica 0.600 cf} 2 16 0 1.000 448 832 label
+1 1.000 528 784 528 528 2 polygon
+1 1.000 528 384 528 224 624 224 3 polygon
+1.000 0 624 224 generic::dot
+(IRF820) {/Helvetica 0.600 cf} 2 16 0 1.000 720 384 label
+(MJE350) {/Helvetica 0.600 cf} 2 16 0 1.000 624 704 label
+(1k) {/Helvetica 0.600 cf} 2 16 0 1.000 656 816 label
 1 1.000 -544 352 -544 400 -640 400 3 polygon
 1 1.000 -544 176 -544 128 -640 128 3 polygon
 1.000 0 -672 272 analog::diode
@@ -551,14 +541,32 @@ sce
 (250V) {/Helvetica 0.600 cf} 2 16 0 1.000 -752 272 label
 (230V) {/Helvetica 0.600 cf} 2 16 0 1.000 -848 432 label
 (630mA) {/Helvetica 0.600 cf} 2 16 0 1.000 -848 352 label
-1 1.000 912 848 848 848 2 polygon
-1.000 180 896 688 euro::D
-1 1.000 854 690 871 672 2 polygon
-1 1.000 919 672 936 656 2 polygon
-(9.1V) {/Helvetica 0.600 cf} 2 16 0 1.000 944 704 label
-(5W) {/Helvetica 0.600 cf} 2 16 0 1.000 944 672 label
-1 1.000 896 736 896 848 2 polygon
-1 1.000 896 640 896 560 784 560 3 polygon
+1 1.000 992 912 928 912 2 polygon
+1.000 180 976 752 euro::D
+1 1.000 934 754 951 736 2 polygon
+1 1.000 999 736 1016 720 2 polygon
+(9.1V) {/Helvetica 0.600 cf} 2 16 0 1.000 1024 768 label
+(5W) {/Helvetica 0.600 cf} 2 16 0 1.000 1024 736 label
+1 1.000 976 800 976 912 2 polygon
+1 1.000 976 704 976 624 864 624 3 polygon
+1 1.000 96 384 96 448 2 polygon
+1.000 180 96 208 euro::R
+1 1.000 96 272 96 304 2 polygon
+1.000 90 224 128 analog::pnp
+1 1.000 224 176 224 288 96 288 3 polygon
+(390) {/Helvetica 0.600 cf} 2 16 0 1.000 128 208 label
+1 1.000 704 912 -48 912 -48 784 3 polygon
+1 1.000 160 128 -320 128 2 polygon
+1 1.000 96 448 -240 448 2 polygon
+1.000 0 96 288 tubeamp::dot
+1.000 180 336 304 euro::R
+(100k) {/Helvetica 0.600 cf} 2 16 0 1.000 368 304 label
+1 1.000 336 384 336 448 96 448 3 polygon
+1 1.000 336 224 336 128 2 polygon
+1 1.000 384 128 288 128 2 polygon
+1.000 0 336 128 tubeamp::dot
+1.000 0 96 448 tubeamp::dot
+-1.000 180 -160 448 analog::gnd
 pgsave restore showpage
 
 %%Trailer
