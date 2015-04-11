@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%Title: power.ps
 %%Creator: XCircuit v3.7 rev26
-%%CreationDate: Fri Apr 10 22:45:24 2015
+%%CreationDate: Sat Apr 11 14:09:03 2015
 %%Pages: 1
 %%BoundingBox: 68 68 904 646
 %%DocumentNeededResources: font Helvetica Helvetica-Bold Times-Roman 
@@ -239,17 +239,6 @@ begingate
 endgate
 } def
 
-/euro::L {
-begingate
-1 1.000 12 -36 24 12 90.000 270.000 ellipse
-1 1.000 12 -12 24 12 90.000 270.000 ellipse
-1 1.000 12 12 24 12 90.000 270.000 ellipse
-1 1.000 12 36 24 12 90.000 270.000 ellipse
-1 1.000 12 48 12 88 2 polygon
-1 1.000 12 -48 12 -88 2 polygon
-endgate
-} def
-
 /analog::diode {
 begingate
 248 1.000 -18 -16 0 16 18 -16 3 polygon
@@ -310,6 +299,26 @@ begingate
 endgate
 } def
 
+/analog::inductor {
+begingate
+1 1.000 20 -22 20 -38 0 -42 0 -18 spline
+1 1.000 -20 -14 -20 -26 0 -22 0 -18 spline
+1 1.000 20 38 20 22 0 18 0 42 spline
+1 1.000 20 18 20 2 0 -2 0 22 spline
+1 1.000 20 -2 20 -18 0 -22 0 2 spline
+1 1.000 -20 26 -20 14 0 18 0 22 spline
+1 1.000 -20 6 -20 -6 0 -2 0 2 spline
+1 1.000 0 -42 0 -64 2 polygon
+1 1.000 0 42 0 64 2 polygon
+1.000 0.000 0.000 scb
+(l.1) {/Times-Roman cf} 2 9 0 1.000 0 64 pinlabel
+(l.2) {/Times-Roman cf} 2 13 0 1.000 0 -64 pinlabel
+0.180 0.545 0.341 scb
+(spice:L%i %pl.1 %pl.2 1.0U) {/Times-Roman cf} 2 0 0 1.000 -208 -160 infolabel
+(sim:l %pl.1 %pl.2) {/Times-Roman cf} 2 0 0 1.000 -208 -208 infolabel
+endgate
+} def
+
 
 %%EndSetup
 
@@ -324,7 +333,6 @@ endgate
 -1.000 0 -560 -304 analog::npn
 1.000 0 -560 -448 euro::R
 -1.000 0 -384 128 tubeamp::tube-pentode
-1.000 270 -70 340 euro::L
 1 1.000 16 352 16 288 48 288 0 288 4 polygon
 1.000 180 16 46 analog::diode
 1.000 225 -33 14 generic::arrow
@@ -345,25 +353,14 @@ endgate
 1 1.000 -944 496 -976 496 -976 464 -976 512 4 polygon
 1 1.000 -512 128 -560 128 2 polygon
 1.000 45 -560 272 generic::arrow
-(470k) {/Helvetica 0.600 cf} 2 16 0 1.000 -704 304 label
-(470n) {/Helvetica 0.600 cf} 2 16 0 1.000 -896 592 label
-(630V) {/Helvetica 0.600 cf} 2 16 0 1.000 -896 560 label
-(470) {/Helvetica 0.600 cf} 2 16 0 1.000 -528 272 label
-(10k) {/Helvetica 0.600 cf} 2 16 0 1.000 48 -208 label
 1 1.000 -560 -528 -560 -560 2 polygon
--1.000 270 -71 444 euro::L
--1.000 270 89 444 euro::L
 1.000 270 0 720 tubeamp::speaker
 1 1.000 -160 432 -160 688 -16 688 3 polygon
 1 1.000 176 432 176 688 32 688 3 polygon
-(8) {/Helvetica 0.600 cf} 2 16 0 1.000 0 736 label
-(MJE340) {/Helvetica 0.600 cf} 2 16 0 1.000 -496 -290 label
 1 1.000 16 -400 16 -304 2 polygon
 1 1.000 16 -480 16 -592 48 -592 0 -592 4 polygon
-1.000 270 -214 340 euro::L
 1 1.000 -368 352 -368 272 2 polygon
 1 1.000 -304 352 -368 352 2 polygon
-(270) {/Helvetica 0.600 cf} 2 16 0 1.000 -528 -464 label
 1.000 0 -560 128 tubeamp::dot
 1.000 0 -736 496 tubeamp::dot
 1.000 0 16 -64 tubeamp::dot
@@ -392,25 +389,15 @@ sce
 1 1.000 944 496 976 496 976 464 976 512 4 polygon
 1 1.000 512 128 560 128 2 polygon
 -1.000 45 560 272 generic::arrow
-(470k) {/Helvetica 0.600 cf} 2 19 0 1.000 704 304 label
-(470n) {/Helvetica 0.600 cf} 2 19 0 1.000 896 592 label
-(630V) {/Helvetica 0.600 cf} 2 19 0 1.000 896 560 label
-(470) {/Helvetica 0.600 cf} 2 19 0 1.000 528 272 label
 1 1.000 560 -528 560 -560 2 polygon
-(MJE340) {/Helvetica 0.600 cf} 2 19 0 1.000 496 -290 label
-1.000 270 106 340 euro::L
 1 1.000 368 352 368 272 2 polygon
 1 1.000 304 352 368 352 2 polygon
-(270) {/Helvetica 0.600 cf} 2 19 0 1.000 528 -464 label
 -1.000 0 560 128 tubeamp::dot
 -1.000 0 736 496 tubeamp::dot
 0.000 0.000 1.000 scb
 (+200V) {/Helvetica-Bold cf} 2 19 0 1.000 592 800 label
 (Reg) {/Helvetica-Bold cf} 2 19 0 1.000 576 750 label
 sce
-1.000 270 250 340 euro::L
-(GREEN) {/Helvetica 0.600 cf} 2 16 0 1.000 48 -434 label
-(RED) {/Helvetica 0.600 cf} 2 16 0 1.000 48 46 label
 1 1.000 496 -304 -496 -304 2 polygon
 1 1.000 560 -560 -560 -560 2 polygon
 0.000 0.000 1.000 scb
@@ -426,18 +413,13 @@ sce
 (DA152) {/Helvetica cf} 2 16 0 1.000 208 432 label
 1 1.000 224 0 224 -64 -224 -64 -224 0 4 polygon
 1.000 0 -400 -96 euro::R
-(1) {/Helvetica 0.600 cf} 2 16 0 1.000 -368 -96 label
 1.000 0 -400 -176 analog::gnd
 1.000 0 400 -96 euro::R
-(1) {/Helvetica 0.600 cf} 2 16 0 1.000 432 -96 label
 1.000 0 400 -176 analog::gnd
 1 1.000 16 -144 16 -64 2 polygon
 1 1.000 -560 208 -560 -240 2 polygon
 1 1.000 560 -256 560 208 2 polygon
 -1.000 180 353 -104 generic::arrow
-1.000 0.000 0.000 scb
-(48mA) {/Helvetica 0.600 cf} 2 19 0 1.000 342 -98 label
-sce
 1 1.000 16 0 16 -64 2 polygon
 0.000 0.000 1.000 scb
 (Vout) {/Helvetica-Bold cf} 2 16 0 1.000 240 576 label
@@ -457,6 +439,38 @@ sce
 (active correction feedback) {/Helvetica cf} 2 16 0 1.000 640 -352 label
 1 1.000 624 -448 1168 -448 2 polygon
 (http://www.audiyofan.org) {/Helvetica cf} 2 16 0 1.000 640 -400 label
+(1) {/Times-Roman cf} 2 16 0 0.750 -368 -112 label
+(470n) {/Times-Roman cf} 2 16 0 0.750 -912 544 label
+(630V) {/Times-Roman cf} 2 16 0 0.750 -912 432 label
+(470) {/Times-Roman cf} 2 16 0 0.750 -528 256 label
+(470k) {/Times-Roman cf} 2 16 0 0.750 -704 304 label
+(270) {/Times-Roman cf} 2 16 0 0.750 -528 -448 label
+(GREEN) {/Times-Roman cf} 2 16 0 0.750 48 -448 label
+(RED) {/Times-Roman cf} 2 16 0 0.750 48 32 label
+(270) {/Times-Roman cf} 2 16 0 0.750 480 -448 label
+(470) {/Times-Roman cf} 2 16 0 0.750 592 256 label
+(470k) {/Times-Roman cf} 2 16 0 0.750 768 304 label
+(470n) {/Times-Roman cf} 2 16 0 0.750 848 544 label
+(630V) {/Times-Roman cf} 2 16 0 0.750 848 432 label
+(10k) {/Times-Roman cf} 2 16 0 0.750 48 -208 label
+1.000 0.000 0.000 scb
+(48mA) {/Times-Roman cf} 2 16 0 0.750 272 -96 label
+sce
+(MPSA42) {/Helvetica cf} 2 16 0 1.000 336 -288 label
+(MPSA42) {/Helvetica cf} 2 16 0 1.000 -496 -288 label
+(1) {/Times-Roman cf} 2 16 0 0.750 432 -112 label
+(8) {/Times-Roman cf} 2 16 0 0.750 0 736 label
+1.000 90 80 352 analog::inductor
+1.000 90 192 352 analog::inductor
+1.000 90 -48 352 analog::inductor
+1.000 90 -160 352 analog::inductor
+1.000 90 -64 432 analog::inductor
+1.000 90 96 432 analog::inductor
+1 1.000 176 432 160 432 2 polygon
+1 1.000 -128 432 -160 432 2 polygon
+1 1.000 0 432 32 432 2 polygon
+1 1.000 -224 352 -320 352 2 polygon
+1 1.000 256 352 320 352 2 polygon
 pgsave restore showpage
 
 %%Trailer
