@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
 %%Title: psu.ps
 %%Creator: XCircuit v3.7 rev26
-%%CreationDate: Sat Nov 14 13:43:25 2015
+%%CreationDate: Sat Nov 14 19:10:05 2015
 %%Pages: 2
 %%BoundingBox: 0 0 612 792
 %%DocumentNeededResources: font Helvetica Helvetica-Bold Times-Roman 
@@ -356,6 +356,21 @@ begingate
 endgate
 } def
 
+/analog::capacitor {
+begingate
+1 1.000 0 -64 0 -6 2 polygon
+1 1.000 0 64 0 6 2 polygon
+1 1.000 -32 6 32 6 2 polygon
+1 1.000 -32 -6 32 -6 2 polygon
+1.000 0.000 0.000 scb
+(c.1) {/Times-Roman cf} 2 9 0 1.000 0 64 pinlabel
+(c.2) {/Times-Roman cf} 2 13 0 1.000 0 -64 pinlabel
+0.180 0.545 0.341 scb
+(spice:C%i %pc.1 %pc.2 1.0P) {/Times-Roman cf} 2 0 0 1.000 -208 -160 infolabel
+(sim:c %pc.1 %pc.2) {/Times-Roman cf} 2 0 0 1.000 -208 -208 infolabel
+endgate
+} def
+
 /generic::arrow {
 % nonetwork
 begingate
@@ -372,7 +387,7 @@ endgate
 %%PageBoundingBox: 0 0 612 792
 /pgsave save def bop
 1.0000 inchscale
-2.6000 setlinewidth 636 742 translate
+2.6000 setlinewidth 636 718 translate
 
 1.000 0 -460 151 euro::L
 1.000 0 -460 583 euro::L
@@ -480,18 +495,12 @@ sce
 1 1.000 528 384 528 224 624 224 3 polygon
 1.000 0 624 224 generic::dot
 1 1.000 -544 352 -544 400 -640 400 3 polygon
-1 1.000 -544 176 -544 128 -640 128 3 polygon
-1.000 0 -672 272 analog::diode
-1.000 180 -624 272 analog::diode
-1 1.000 -640 256 -656 288 2 polygon
-1 1.000 -624 320 -672 320 -640 320 -640 400 4 polygon
-1 1.000 -624 224 -656 224 -672 224 3 polygon
-1 1.000 -656 224 -656 128 -640 128 3 polygon
+1.000 0 -656 256 analog::diode
+1 1.000 -616 240 -632 272 2 polygon
 1.000 90 -816 400 tubeamp::fuse
 1 1.000 -768 400 -640 400 2 polygon
 1 1.000 -864 400 -912 400 -912 272 -960 272 4 polygon
 1.000 90 -800 128 euro::R
-1 1.000 -720 128 -656 128 2 polygon
 1 1.000 -880 128 -912 128 -912 240 -960 240 4 polygon
 1 1.000 -841 113 -762 144 2 polygon
 1 1.000 992 912 928 912 2 polygon
@@ -506,9 +515,6 @@ sce
 1 1.000 704 912 -48 912 -48 784 3 polygon
 1 1.000 96 448 -240 448 2 polygon
 1.000 0 224 288 tubeamp::dot
-1.000 180 336 304 euro::R
-1 1.000 336 384 336 448 96 448 3 polygon
-1 1.000 336 224 336 128 2 polygon
 1.000 0 336 128 tubeamp::dot
 1.000 0 224 448 tubeamp::dot
 -1.000 180 -160 448 analog::gnd
@@ -530,10 +536,10 @@ sce
 (500V) {/Times-Roman cf} 2 16 0 0.750 240 656 label
 (200u) {/Times-Roman cf} 2 16 0 0.750 240 688 label
 {/Helvetica cf} 1 16 0 1.000 448 848 label
-(IRF820) {/Times-Roman cf} 2 16 0 0.750 816 928 label
-(5k) {/Times-Roman cf} 2 16 0 0.750 656 816 label
+(IRF820) {/Times-Roman cf} 2 16 0 0.750 816 976 label
+(5k) {/Times-Roman cf} 2 16 0 0.750 656 832 label
 (MJE350) {/Times-Roman cf} 2 16 0 0.750 608 688 label
-(10k) {/Times-Roman cf} 2 16 0 0.750 896 768 label
+(10k) {/Times-Roman cf} 2 16 0 0.750 800 768 label
 (100k) {/Times-Roman cf} 2 16 0 0.750 704 656 label
 (9.1V) {/Times-Roman cf} 2 16 0 0.750 1024 752 label
 (5W) {/Times-Roman cf} 2 16 0 0.750 1024 720 label
@@ -553,11 +559,10 @@ sce
 (35V) {/Times-Roman cf} 2 16 0 0.750 -256 336 label
 (35V) {/Times-Roman cf} 2 16 0 0.750 -256 176 label
 (100u) {/Times-Roman cf} 2 16 0 0.750 -256 208 label
-(35V) {/Times-Roman cf} 2 16 0 0.750 -80 240 label
+(35V) {/Times-Roman cf} 2 16 0 0.750 -80 224 label
 (1000u) {/Times-Roman cf} 2 16 0 0.750 -16 320 label
 (18V) {/Times-Roman cf} 2 16 0 0.750 144 336 label
-(2.2k) {/Times-Roman cf} 2 16 0 0.750 256 208 label
-(100k) {/Times-Roman cf} 2 16 0 0.750 368 304 label
+(2.2k) {/Times-Roman cf} 2 16 0 0.750 240 256 label
 (6.3V) {/Times-Roman cf} 2 16 0 0.750 -432 208 label
 (6.3V) {/Times-Roman cf} 2 16 0 0.750 -432 0 label
 (5A) {/Times-Roman cf} 2 16 0 0.750 -432 176 label
@@ -585,14 +590,14 @@ sce
 1.000 90 992 448 euro::R
 1 1.000 944 352 976 352 2 polygon
 1 1.000 912 448 880 448 2 polygon
-(10k) {/Times-Roman cf} 2 16 0 0.750 960 400 label
+(10k) {/Times-Roman cf} 2 16 0 0.750 976 400 label
 1.000 90 736 448 euro::R
 (10k) {/Times-Roman cf} 2 16 0 0.750 704 480 label
 1 1.000 848 448 800 448 2 polygon
 1 1.000 656 448 624 448 2 polygon
 1.000 0 816 352 euro::ELCO
-(15u) {/Times-Roman cf} 2 16 0 0.750 848 352 label
-(450V) {/Times-Roman cf} 2 16 0 0.750 848 320 label
+(15u) {/Times-Roman cf} 2 16 0 0.750 832 304 label
+(450V) {/Times-Roman cf} 2 16 0 0.750 832 272 label
 1.000 0 816 448 generic::dot
 1.000 0 816 224 generic::dot
 1 1.000 816 368 816 448 2 polygon
@@ -611,7 +616,20 @@ sce
 (IN) {/Times-Roman cf} 2 16 0 0.750 -16 96 label
 (OUT) {/Times-Roman cf} 2 16 0 0.750 160 96 label
 (GND) {/Times-Roman cf} 2 16 0 0.750 80 192 label
-(2W) {/Times-Roman cf} 2 16 0 0.750 -112 80 label
+(1W) {/Times-Roman cf} 2 16 0 0.750 -96 80 label
+1.000 0 336 304 analog::capacitor
+1 1.000 336 128 336 240 2 polygon
+1 1.000 336 352 336 448 96 448 3 polygon
+(4.7u) {/Times-Roman cf} 2 16 0 0.750 352 256 label
+-1.000 180 -656 288 euro::D
+1 1.000 -680 273 -696 305 2 polygon
+1 1.000 -656 336 -656 400 2 polygon
+1 1.000 -544 176 -544 128 -720 128 3 polygon
+1 1.000 -656 208 -656 128 2 polygon
+1.000 0 -656 400 generic::dot
+1.000 0 -656 128 generic::dot
+(10C.W) {/Times-Roman cf} 2 16 0 0.750 816 944 label
+(25V) {/Times-Roman cf} 2 16 0 0.750 352 224 label
 pgsave restore showpage
 
 %%Page: power_supply 2
