@@ -7,7 +7,7 @@ Pour contourner le problème de linéarité de ce tube, il est piloté par la gr
 
 Ce projet nécessite l'utilisation de **tensions dangereuses** pouvant être mortelles. Ce projet est développé sous licence libre CC-by-sa 3.0. Les auteurs ne peuvent **en aucun cas** être tenus responsables de blessures, dommages directs ou indirects liés à la réalisation du projet décrit ci après et quelque soit leur nature. Cela est de votre responsabilité d'assurer votre sécurité et celle des autres, vous êtes prévenus.
 
-![](schematics/power_supply.png)
+![](schematics/psu.png)
 ![](schematics/power.png)
 ![](schematics/driver.png)
 

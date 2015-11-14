@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0
 %%Title: psu.ps
 %%Creator: XCircuit v3.7 rev26
-%%CreationDate: Wed Nov  4 22:37:10 2015
+%%CreationDate: Sat Nov 14 13:43:25 2015
 %%Pages: 2
 %%BoundingBox: 0 0 612 792
 %%DocumentNeededResources: font Helvetica Helvetica-Bold Times-Roman 
@@ -369,9 +369,10 @@ endgate
 
 %%Page: power_supply 1
 %%PageOrientation: Portrait
+%%PageBoundingBox: 0 0 612 792
 /pgsave save def bop
 1.0000 inchscale
-2.6000 setlinewidth 1152 512 translate
+2.6000 setlinewidth 636 742 translate
 
 1.000 0 -460 151 euro::L
 1.000 0 -460 583 euro::L
@@ -395,25 +396,25 @@ endgate
 1 1.000 -320 320 -320 288 2 polygon
 1.000 0 -320 272 generic::jumper
 1 1.000 -160 160 -160 128 2 polygon
-1.000 0 -64 288 euro::ELCO
+1.000 0 -16 288 euro::ELCO
 1 1.000 -160 400 -160 448 2 polygon
-1 1.000 -64 320 -64 448 2 polygon
-1 1.000 -64 240 -64 128 2 polygon
+1 1.000 -16 320 -16 448 2 polygon
+1 1.000 -16 240 -16 128 2 polygon
 1 1.000 -320 128 -320 256 2 polygon
-1.000 0 96 352 euro::D
-1 1.000 136 351 120 367 2 polygon
-1 1.000 72 369 56 385 2 polygon
-1.000 0 -64 448 tubeamp::dot
+1.000 0 224 352 euro::D
+1 1.000 264 351 248 367 2 polygon
+1 1.000 200 369 184 385 2 polygon
+1.000 0 -16 448 tubeamp::dot
 1.000 0 -160 448 tubeamp::dot
 1.000 0 -160 272 tubeamp::dot
 1.000 0 -160 128 tubeamp::dot
-1.000 0 -64 128 tubeamp::dot
+1.000 0 -16 128 tubeamp::dot
 1.000 0 -320 448 tubeamp::dot
 0.000 0.000 1.000 scb
 (-20V) {/Helvetica-Bold cf} 2 16 0 1.000 432 128 label
 sce
 1 1.000 384 128 416 128 416 144 416 96 4 polygon
-1.000 0 96 128 tubeamp::dot
+1.000 0 224 128 tubeamp::dot
 1.000 90 -256 608 euro::brug
 1 1.000 -448 496 -256 496 -256 512 3 polygon
 1.000 90 -352 608 analog::gnd
@@ -499,21 +500,17 @@ sce
 1 1.000 999 736 1016 720 2 polygon
 1 1.000 976 800 976 912 2 polygon
 1 1.000 976 704 976 624 864 624 3 polygon
-1 1.000 96 384 96 448 2 polygon
-1.000 180 96 208 euro::R
-1 1.000 96 272 96 304 2 polygon
-1.000 90 224 128 analog::pnp
-1 1.000 224 176 224 288 96 288 3 polygon
+1 1.000 224 384 224 448 2 polygon
+1.000 180 224 208 euro::R
+1 1.000 224 272 224 304 2 polygon
 1 1.000 704 912 -48 912 -48 784 3 polygon
-1 1.000 160 128 -320 128 2 polygon
 1 1.000 96 448 -240 448 2 polygon
-1.000 0 96 288 tubeamp::dot
+1.000 0 224 288 tubeamp::dot
 1.000 180 336 304 euro::R
 1 1.000 336 384 336 448 96 448 3 polygon
 1 1.000 336 224 336 128 2 polygon
-1 1.000 384 128 288 128 2 polygon
 1.000 0 336 128 tubeamp::dot
-1.000 0 96 448 tubeamp::dot
+1.000 0 224 448 tubeamp::dot
 -1.000 180 -160 448 analog::gnd
 0 1.000 -224 -16 -224 -320 320 -320 320 -16 4 polygon
 {/Helvetica 0.800 cf} (Copyright 2015 Gregoire HUBERT) {/Helvetica cf} 3 16 0 
@@ -534,10 +531,10 @@ sce
 (200u) {/Times-Roman cf} 2 16 0 0.750 240 688 label
 {/Helvetica cf} 1 16 0 1.000 448 848 label
 (IRF820) {/Times-Roman cf} 2 16 0 0.750 816 928 label
-(1k) {/Times-Roman cf} 2 16 0 0.750 656 816 label
+(5k) {/Times-Roman cf} 2 16 0 0.750 656 816 label
 (MJE350) {/Times-Roman cf} 2 16 0 0.750 608 688 label
 (10k) {/Times-Roman cf} 2 16 0 0.750 896 768 label
-(10k) {/Times-Roman cf} 2 16 0 0.750 704 656 label
+(100k) {/Times-Roman cf} 2 16 0 0.750 704 656 label
 (9.1V) {/Times-Roman cf} 2 16 0 0.750 1024 752 label
 (5W) {/Times-Roman cf} 2 16 0 0.750 1024 720 label
 (15u) {/Times-Roman cf} 2 16 0 0.750 896 544 label
@@ -556,10 +553,10 @@ sce
 (35V) {/Times-Roman cf} 2 16 0 0.750 -256 336 label
 (35V) {/Times-Roman cf} 2 16 0 0.750 -256 176 label
 (100u) {/Times-Roman cf} 2 16 0 0.750 -256 208 label
-(35V) {/Times-Roman cf} 2 16 0 0.750 -32 256 label
-(1000u) {/Times-Roman cf} 2 16 0 0.750 -32 288 label
-(20V) {/Times-Roman cf} 2 16 0 0.750 144 352 label
-(390) {/Times-Roman cf} 2 16 0 0.750 128 208 label
+(35V) {/Times-Roman cf} 2 16 0 0.750 -80 240 label
+(1000u) {/Times-Roman cf} 2 16 0 0.750 -16 320 label
+(18V) {/Times-Roman cf} 2 16 0 0.750 144 336 label
+(2.2k) {/Times-Roman cf} 2 16 0 0.750 256 208 label
 (100k) {/Times-Roman cf} 2 16 0 0.750 368 304 label
 (6.3V) {/Times-Roman cf} 2 16 0 0.750 -432 208 label
 (6.3V) {/Times-Roman cf} 2 16 0 0.750 -432 0 label
@@ -603,13 +600,26 @@ sce
 1 1.000 544 832 560 816 2 polygon
 1 1.000 512 832 496 848 2 polygon
 (6.2V) {/Times-Roman cf} 2 16 0 0.750 448 768 label
+0 1.000 16 176 16 80 160 80 160 176 4 polygon
+1.000 90 -80 128 euro::R
+(15) {/Times-Roman cf} 2 16 0 0.750 -96 160 label
+1 1.000 0 128 16 128 2 polygon
+1 1.000 384 128 160 128 2 polygon
+1 1.000 224 288 80 288 80 176 3 polygon
+1 1.000 -160 128 -320 128 2 polygon
+(LM337) {/Times-Roman cf} 2 16 0 0.750 48 128 label
+(IN) {/Times-Roman cf} 2 16 0 0.750 -16 96 label
+(OUT) {/Times-Roman cf} 2 16 0 0.750 160 96 label
+(GND) {/Times-Roman cf} 2 16 0 0.750 80 192 label
+(2W) {/Times-Roman cf} 2 16 0 0.750 -112 80 label
 pgsave restore showpage
 
 %%Page: power_supply 2
 %%PageOrientation: Portrait
+%%PageBoundingBox: 0 0 612 792
 /pgsave save def bop
 1.0000 inchscale
-2.6000 setlinewidth 1152 512 translate
+2.6000 setlinewidth 636 742 translate
 
 1.000 0 -460 151 euro::L
 1.000 0 -460 583 euro::L
