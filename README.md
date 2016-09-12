@@ -9,12 +9,14 @@ Les caractéristiques de l'amplificateur sont en cours d'évaluation. Pour l'ins
 
  * Puissance de sortie : 25W dans 8Ω (pour un canal, cela devrait baisser pour les deux canaux).
  * Bande passante pour -1dB : 8Hz - 140kHz.
- * Le facteur d'amortissement évalué (non mesuré) est de 27.
- * La distorsion n'a pas été mesurée.
+ * Le facteur d'amortissement évalué (non mesuré) est de 25.
+ * La distorsion harmonique est de -71dB (0,02%) à 1W et -53dB (0,23%) à 10W.
+ * La distorsion d'intermodulation est de -72dB (0,02%) jusqu'à l'écrêtage.
+ * La distorsion d'amplitude est trop faible pour être mesurée à l'oscilloscope, on va passer au FFT.
 
 Le schéma de l'alimentation a été en grande partie dictée par le transformateur d'alimentation que j'avais sous la main. Un transformateur avec 1×270V et 1×20V (ou plus) aurait été plus adapté.
 
-Ce projet nécessite l'utilisation de **tensions dangereuses** pouvant être mortelles. Ce projet est développé sous licence libre CC-by-sa 3.0. Les auteurs ne peuvent **en aucun cas** être tenus responsables de blessures, dommages directs ou indirects liés à la réalisation du projet décrit ci après et quelque soit leur nature. Cela est de votre responsabilité d'assurer votre sécurité et celle des autres, **vous êtes prévenus**.
+Ce projet nécessite l'utilisation de **tensions dangereuses** pouvant être mortelles. Ce projet est développé sous licence libre CC-by-sa 3.0. Les auteurs ne peuvent **en aucun cas** être tenus responsables de blessures, dommages directs ou indirects liés à la réalisation ou la mise en œuvre du projet décrit ci après et ce quelque soit leur nature. Il est de votre responsabilité d'assurer votre sécurité et celle des autres, **vous êtes prévenus**.
 
 ![](schematics/psu.png)
 ![](schematics/power.png)
