@@ -7,12 +7,12 @@ Pour contourner le problème de linéarité de ce tube, il est piloté par la gr
 
 Les caractéristiques de l'amplificateur sont en cours d'évaluation. Pour l'instant, les mesures ont donné les chiffres suivants :
 
- * Puissance de sortie : 25W dans 8Ω (pour un canal, cela devrait baisser pour les deux canaux).
+ * Puissance de sortie : 20W dans 8Ω pour les deux canaux.
+ * Gain: 21dB (8Ω)
  * Bande passante pour -1dB : 8Hz - 140kHz.
  * Le facteur d'amortissement évalué (non mesuré) est de 25.
  * La distorsion harmonique est de -71dB (0,02%) à 1W et -53dB (0,23%) à 10W.
  * La distorsion d'intermodulation est de -72dB (0,02%) jusqu'à l'écrêtage.
- * La distorsion d'amplitude est trop faible pour être mesurée à l'oscilloscope, on va passer au FFT.
 
 Le schéma de l'alimentation a été en grande partie dictée par le transformateur d'alimentation que j'avais sous la main. Un transformateur avec 1×270V et 1×20V (ou plus) aurait été plus adapté.
 
